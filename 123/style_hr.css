@@ -425,8 +425,9 @@ ff3{
 }
 
 .sidebar{
-    width: 100%;
-    max-width: 100%;
+    width: 140px;
+    font-size: 14px;
+    top: 10px;
 }
 
 
