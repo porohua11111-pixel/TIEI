@@ -92,6 +92,11 @@ main {
 }
 
 
+.sidebar-wrapper{
+    width: clamp(120px,25vw,230px);
+    flex-shrink:0;
+}
+
 .panel,
 .pane {
     background:#111;
@@ -403,12 +408,6 @@ h2 {
 
 .burger{
     display:none;
-    padding:15px;
-    background:#111;
-    color:white;
-    text-align:center;
-    cursor:pointer;
-    font-size:22px;
 }
 /* ===== ADAPTIVE ===== */
 
@@ -451,17 +450,21 @@ h2 {
 
     .sidebar-wrapper{
     width:100%;
+    flex-shrink:1;
 }
 
 
-    .burger{
+      .burger{
         display:block;
-        margin-bottom:15px;
-         background:#111;
+        width:100%;
+        padding:15px;
+        background:#111;
         color:white;
         text-align:center;
         cursor:pointer;
         font-size:22px;
+        border:2px solid #333;
+        border-radius:8px;
     }
 
     .sidebar{
@@ -529,10 +532,9 @@ h2 {
 
 
 
-    /* Если checkbox отмечен — показать меню */
-    #menu-toggle:checked + .burger + .sidebar{
-        display:block !important;
-    }
+   #menu-toggle:checked ~ .sidebar{
+    display:block;
+}
 }
 
 
@@ -563,7 +565,3 @@ img {
 }
 
 
-.sidebar-wrapper{
-    width: clamp(120px,25vw,230px);
-    flex-shrink:0;
-}
