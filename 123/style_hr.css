@@ -404,7 +404,9 @@ h2 {
 header{
     height:auto;
     flex-direction:column;
+    
 }
+
 
 
 main{
@@ -419,17 +421,29 @@ main{
     width: 100%;
 }
 
-ff3{
+.ff3{
     margin-left: 0;
     width: 100%;
 }
 
 .sidebar{
-    width: 140px;
+    width: 110px;
     font-size: 14px;
     top: 10px;
 }
 
+.panel
+.pane{
+    width: 140px;
+}
+
+.panel ul{
+padding: 5px;
+}
+
+.panel li{
+margin: 4px 0;
+}
 
 .dossier1{
     flex-direction:column;
@@ -461,7 +475,10 @@ article{
 .panel a,
 .btn{
     font-size: 13px;
-}
+
+body{
+ background-color: red
+}}
 
 }
 
