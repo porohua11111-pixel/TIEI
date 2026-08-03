@@ -396,8 +396,20 @@ h2 {
 
 }
 
+#menu-toggle{
+    display: none;
+}
 
 
+.burger{
+    display:none;
+    padding:15px;
+    background:#111;
+    color:white;
+    text-align:center;
+    cursor:pointer;
+    font-size:22px;
+}
 /* ===== ADAPTIVE ===== */
 
 @media (max-width: 768px) {
@@ -441,6 +453,16 @@ h2 {
     width:100%;
 }
 
+
+    .burger{
+        display:block;
+        margin-bottom:15px;
+         background:#111;
+        color:white;
+        text-align:center;
+        cursor:pointer;
+        font-size:22px;
+    }
 
     .sidebar{
         width:100%;
@@ -505,15 +527,11 @@ h2 {
         font-size:22px;
     }
 
-     .burger{
-        display:block;
-        margin-bottom:15px;
-    }
 
 
     /* Если checkbox отмечен — показать меню */
     #menu-toggle:checked + .burger + .sidebar{
-        display:block;
+        display:block !important;
     }
 }
 
@@ -544,21 +562,6 @@ img {
     display: flex;
 }
 
-#menu-toggle{
-    display: none;
-}
-
- 
-
-.burger{
-    display:none;
-    padding:15px;
-    background:#111;
-    color:white;
-    text-align:center;
-    cursor:pointer;
-    font-size:22px;
-}
 
 .sidebar-wrapper{
     width: clamp(120px,25vw,230px);
