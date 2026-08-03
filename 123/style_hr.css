@@ -422,13 +422,14 @@ h2 {
         flex-direction:column;
         justify-content:center;
         align-items:center;
-        height:auto;
+        height: auto;
         padding:15px;
-        gap:15px;
+        gap: 5px;
+        overflow:hidden;
     }
 
     header img{
-        max-width:250px;
+        max-width:150px;
     }
 
     nav{
