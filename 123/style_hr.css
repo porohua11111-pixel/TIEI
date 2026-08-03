@@ -246,7 +246,7 @@ h2 {
 .dossier {
 
     width:90%;
-    max-width:none;
+    max-width:900px;
     margin: auto;
 
     padding:25px;
@@ -579,3 +579,8 @@ img {
 }
 
 
+    .small-photo {
+    max-width:150px !important;
+    max-height:150px !important;
+    object-fit:contain;
+}
