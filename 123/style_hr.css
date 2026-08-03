@@ -404,6 +404,7 @@ h2 {
 header{
     height:auto;
     flex-direction:column;
+    max-width: 170px;
     
 }
 
