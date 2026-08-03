@@ -16,7 +16,7 @@ body {
 
 header {
     width:100%;
-    height: 120px;
+    height:120px;
     background:#020202;
 
     display:flex;
@@ -25,6 +25,8 @@ header {
 
     padding:10px 40px;
 }
+
+
 
 
 header img {
@@ -398,7 +400,6 @@ h2 {
 
 /* ===== ADAPTIVE ===== */
 
-
 @media (max-width: 768px) {
 
     *{
@@ -435,9 +436,16 @@ h2 {
         gap:15px;
     }
 
+
+    .sidebar-wrapper{
+    width:100%;
+}
+
+
     .sidebar{
         width:100%;
         position:static;
+        display: none;
     }
 
     .panel,
@@ -497,7 +505,19 @@ h2 {
         font-size:22px;
     }
 
+     .burger{
+        display:block;
+        margin-bottom:15px;
+    }
+
+
+    /* Если checkbox отмечен — показать меню */
+    #menu-toggle:checked + .burger + .sidebar{
+        display:block;
+    }
 }
+
+
 
 img {
     max-width:100%;
@@ -522,4 +542,25 @@ img {
     align-items: center;
     justify-content: center; /* по горизонтали */
     display: flex;
+}
+
+#menu-toggle{
+    display: none;
+}
+
+ 
+
+.burger{
+    display:none;
+    padding:15px;
+    background:#111;
+    color:white;
+    text-align:center;
+    cursor:pointer;
+    font-size:22px;
+}
+
+.sidebar-wrapper{
+    width: clamp(120px,25vw,230px);
+    flex-shrink:0;
 }
