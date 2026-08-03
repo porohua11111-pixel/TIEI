@@ -407,7 +407,10 @@ header{
     
 }
 
-
+header img{
+    max-width: 150px;
+    width: 150px;
+}
 
 main{
     flex-direction:column;
